@@ -159,7 +159,7 @@ export default function Home() {
           <div className="flex justify-end">
             <button
               className=" mt-8 border-none w-44 h-14 border rounded-md bg-col-accent"
-              action="submit"
+              type="submit"
             >
               <h3 className=" text-xl m-0">Send</h3>
             </button>
