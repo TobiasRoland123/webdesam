@@ -156,7 +156,10 @@ export default function Home() {
             </select>
           </div>
           <div className="flex justify-end">
-            <Button text={"Send"}></Button>
+            <Button
+              type={"submit"}
+              text={"Send"}
+            ></Button>
           </div>
         </form>
       </section>
