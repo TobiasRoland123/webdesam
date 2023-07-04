@@ -64,7 +64,7 @@ export default function Home() {
         <h2>Contact me</h2>
 
         <form
-          name="contact"
+          name="Contact"
           method="POST"
           data-netlify="true"
           onSubmit="submit"
