@@ -67,7 +67,7 @@ export default function Home() {
           name="contact"
           method="POST"
           data-netlify="true"
-          action="submit"
+          onSubmit="submit"
         >
           <div className="  flex flex-col mt-4 mb-2">
             <label
