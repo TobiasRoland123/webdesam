@@ -2,7 +2,6 @@ export default function (props) {
   return (
     <>
       <button
-        type={props.type}
         className=" mt-8 border-none w-44 h-14 border rounded-md bg-col-accent"
         onClick={props.clickAction}
       >
