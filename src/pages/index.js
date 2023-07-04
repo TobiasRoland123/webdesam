@@ -65,7 +65,8 @@ export default function Home() {
 
         <form
           name="contact"
-          netlify
+          method="POST"
+          data-netlify="true"
         >
           <div className="  flex flex-col mt-4 mb-2">
             <label
@@ -155,10 +156,7 @@ export default function Home() {
             </select>
           </div>
           <div className="flex justify-end">
-            <Button
-              text={"Send"}
-              clickAction={console.log("submitted")}
-            ></Button>
+            <Button text={"Send"}></Button>
           </div>
         </form>
       </section>
