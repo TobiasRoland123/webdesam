@@ -71,7 +71,7 @@ export default function Home() {
         >
           <input
             type="hidden"
-            name="contact"
+            name="form-name"
             value="contact"
           />
 
