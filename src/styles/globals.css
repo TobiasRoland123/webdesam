@@ -2,26 +2,50 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Condensed", sans-serif;
+  color: white;
+  scroll-behavior: smooth;
+  /* transition: all 0.3s ease-in-out; */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+:root {
+  --col-primary: "#5C7773";
+  --col-secondary: "#F9FBF9";
+  --col-accent: "#8AC1C6";
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: #5c7773;
+  color: var(--col-secondary);
+}
+
+p {
+  margin-bottom: 1rem;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  line-height: 1.75;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 3rem 0 1.38rem;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  line-height: 1.1;
+}
+h1 {
+  margin-top: 0;
+  font-size: 4.209rem;
+}
+h2 {
+  font-size: 3.157rem;
+}
+h3 {
+  font-size: 1.333rem;
 }
