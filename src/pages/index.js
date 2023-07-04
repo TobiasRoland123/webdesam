@@ -64,11 +64,17 @@ export default function Home() {
         <h2>Contact me</h2>
 
         <form
-          name="Contact"
+          name="contact"
           method="POST"
           data-netlify="true"
           onSubmit="submit"
         >
+          <input
+            type="hidden"
+            name="contact"
+            value="contact"
+          />
+
           <div className="  flex flex-col mt-4 mb-2">
             <label
               className=" text-base text-col-accent"
