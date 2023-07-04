@@ -63,7 +63,10 @@ export default function Home() {
       <section>
         <h2>Contact me</h2>
 
-        <form>
+        <form
+          name="contact"
+          netlify
+        >
           <div className="  flex flex-col mt-4 mb-2">
             <label
               className=" text-base text-col-accent"
