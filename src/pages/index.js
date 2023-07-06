@@ -3,13 +3,32 @@ import { Inter } from "next/font/google";
 import Image from "next/image";
 import { PersonSvg } from "../../public/images/figures";
 import { USP } from "../components/USP";
+import { Case } from "../components/Case";
 
 const inter = Inter({ subsets: ["latin"] });
+
+const cases = [
+  {
+    caseName: "Kleines",
+    caseImage: "kleines_mockup",
+    caseLink: "https://madvigux.dk/kleines/",
+    caseParagraph:
+      "the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also",
+  },
+  {
+    caseName: "NBU",
+    caseImage: "nbu_mockup",
+    caseLink: "https://madvigux.dk/kleines/",
+    caseParagraph:
+      "the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also",
+  },
+];
 
 export default function Home() {
   return (
     <main>
       <section>
+        <div id="home"></div>
         <h1 className=" mt-12">New website?</h1>
 
         <Image
@@ -21,13 +40,14 @@ export default function Home() {
         />
         <div
           className="
-    flex justify-center"
+    flex justify-center "
         >
-          <Button
-            className=" "
-            text={"Contact me"}
-            clickAction={console.log("button clicked")}
-          />
+          <a
+            className=" items-center flex justify-center align-middle mt-8 border-none w-44 h-14 border rounded-md bg-col-accent"
+            href="#contact"
+          >
+            <h3 className=" text-xl  m-0">Contact me</h3>
+          </a>
         </div>
       </section>
       <section className="  mt-24">
@@ -61,6 +81,7 @@ export default function Home() {
       </section>
 
       <section>
+        <div id="contact"></div>
         <h2>Contact me</h2>
 
         <form
@@ -171,6 +192,40 @@ export default function Home() {
             </button>
           </div>
         </form>
+      </section>
+
+      <section>
+        <div id="cases"></div>
+        <h2 className="text-center mt-24">Cases</h2>
+
+        {cases.map((caseDetails) => (
+          <Case
+            caseImage={caseDetails.caseImage}
+            caseName={caseDetails.caseName}
+            caseLink={caseDetails.caseLink}
+            caseParagraph={caseDetails.caseParagraph}
+          />
+        ))}
+      </section>
+
+      <section>
+        <div id="about"></div>
+        <h2 className="text-center">About</h2>
+
+        <p>
+          Welcome to [Your Name]'s Web Development Studio! I'm a passionate frontend developer and designer, dedicated to bringing
+          your vision to life. With customized websites that captivate and engage, I create user-friendly experiences that leave a
+          lasting impression. Let's collaborate to craft a unique online presence that exceeds your expectations. Contact me today
+          to get started on your tailor-made web solution!
+        </p>
+
+        <Image
+          className=""
+          src="http://webdesam.dk/wedesam_site_content/images/headshotme.png"
+          width={500}
+          height={500}
+          alt="A mock of a case that has been made by wedesam"
+        />
       </section>
     </main>
   );
