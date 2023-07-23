@@ -1,5 +1,6 @@
+import Footer from "@/components/Footer";
 import Navigationbar from "@/components/Navigationbar";
-import Footer from "@/components/footer";
+
 import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
@@ -23,10 +24,10 @@ export default function Document() {
         <title>Webdesam</title>
       </Head>
       <body className=" m-4">
-        <Navigationbar></Navigationbar>
+        {/* <Navigationbar className=" z-10"></Navigationbar> */}
         <Main />
         <NextScript />
-        <Footer></Footer>{" "}
+        <Footer></Footer>
       </body>
     </Html>
   );

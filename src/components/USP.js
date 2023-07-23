@@ -6,7 +6,7 @@ export function USP(props) {
       <article className="mt-24">
         <div className="flex justify-center">
           <Image
-            className=""
+            className=" "
             src={props.svg}
             width={100}
             height={100}
@@ -14,8 +14,10 @@ export function USP(props) {
           />
         </div>
 
-        <h3>{props.uspHeading}</h3>
-        <p>{props.uspParagraph}</p>
+        <div className=" flex flex-col">
+          <h3 className=" mx-auto sm:mx-0">{props.uspHeading}</h3>
+          <p className=" mx-auto">{props.uspParagraph}</p>
+        </div>
       </article>
     </>
   );
