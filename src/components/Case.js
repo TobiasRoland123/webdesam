@@ -1,5 +1,6 @@
 import Button from "@/components/Button";
 import Image from "next/image";
+import { foofest_mockup, kleines_mockup, nbu_mockup } from "../../public/images/mockups";
 
 export function Case(props) {
   return (
@@ -9,7 +10,7 @@ export function Case(props) {
           <a href={props.caseLink}>
             <Image
               className=" mx-auto  "
-              src={`http://webdesam.dk/wedesam_site_content/images/mockups/${props.caseImage}.png`}
+              src={props.caseImage}
               width={500}
               height={500}
               alt={props.caseAlt}

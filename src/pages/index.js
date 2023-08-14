@@ -3,25 +3,25 @@ import { PersonSvg, creativeSvg, supportSvg, toolsSvg } from "../../public/image
 import { USP } from "../components/USP";
 import { Case } from "../components/Case";
 import { useState, useEffect } from "react";
-
+import { kleines_mockup, foofest_mockup, nbu_mockup } from "../../public/images/mockups";
 const cases = [
   {
     caseName: "Kleines",
-    caseImage: "kleines_mockup",
+    caseImage: kleines_mockup,
     caseLink: "https://madvigux.dk/kleines/",
     caseParagraph:
       "Kleines er en guldsmed, som ligger inde på Nørrebro, og beskæftiger sig primært med unikasmykker. Vi har lavet en faceliftet udgave af hendes nuværende hjemmeside, som gør at virksomhedens karakter rigtigt skinner igennem på hjemmesiden.  ",
   },
   {
     caseName: "Foofest",
-    caseImage: "foofest_mockup",
+    caseImage: foofest_mockup,
     caseLink: "https://festival-otaqqwj9v-thefred94.vercel.app",
     caseParagraph:
       "Foofest er et projekt, jeg i forbindelse med en eksamen har udviklet sammen med min gruppe. Vi er selv kommet op med konceptet, som er en nordisk festival der indrager det store flotte nordlys. Siden er 2 delt da vi både har udviklet en side hvor det er muligt at se hvem der spiller på de forskellige scener, samt et flow hvor det er muligt at bestille sine biletter.",
   },
   {
     caseName: "NBU",
-    caseImage: "nbu_mockup",
+    caseImage: nbu_mockup,
     caseLink: "https://madvigux.dk/kleines/",
     caseParagraph:
       "Nørrebro united, bedre kendt som NBU har en hjemmeside med rigtig meget information. Derfor har vi udviklet en udgave af deres site, hvor det er nemt at finde præcis den information du var på udkig efter. Denne side er også en prototype)",
@@ -155,7 +155,7 @@ export default function Home() {
 
         <Image
           className=" mx-auto sm:order-1 "
-          src="http://webdesam.dk/wedesam_site_content/images/mockups/kleines_mockup.png"
+          src={kleines_mockup}
           width={500}
           height={500}
           alt="A mock of a case that has been made by wedesam"
