@@ -4,6 +4,8 @@ import { USP } from "../components/USP";
 import { Case } from "../components/Case";
 import { useState, useEffect } from "react";
 import { kleines_mockup, foofest_mockup, nbu_mockup } from "../../public/images/mockups";
+import { tobias_roland } from "../../public/images/portraits";
+
 const cases = [
   {
     caseName: "Kleines",
@@ -372,7 +374,7 @@ export default function Home() {
 
           <Image
             className=" aspect-square object-cover mx-auto"
-            src="http://webdesam.dk/wedesam_site_content/images/headshotme.png"
+            src={tobias_roland}
             width={500}
             height={500}
             alt="A mock of a case that has been made by wedesam"
