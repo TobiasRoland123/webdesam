@@ -14,8 +14,8 @@ const cases = [
   },
   {
     caseName: "Foofest",
-    caseImage: "kleines_mockup",
-    caseLink: "https://madvigux.dk/kleines/",
+    caseImage: "foofest_mockup",
+    caseLink: "https://festival-otaqqwj9v-thefred94.vercel.app",
     caseParagraph:
       "Foofest er et projekt, jeg i forbindelse med en eksamen har udviklet sammen med min gruppe. Vi er selv kommet op med konceptet, som er en nordisk festival der indrager det store flotte nordlys. Siden er 2 delt da vi både har udviklet en side hvor det er muligt at se hvem der spiller på de forskellige scener, samt et flow hvor det er muligt at bestille sine biletter.",
   },

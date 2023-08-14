@@ -6,20 +6,22 @@ export function Case(props) {
     <>
       <article className=" mt-12 p-4 sm:mt-4">
         <div>
-          <Image
-            className=" mx-auto  "
-            src={`http://webdesam.dk/wedesam_site_content/images/mockups/${props.caseImage}.png`}
-            width={500}
-            height={500}
-            alt={props.caseAlt}
-          />
+          <a href={props.caseLink}>
+            <Image
+              className=" mx-auto  "
+              src={`http://webdesam.dk/wedesam_site_content/images/mockups/${props.caseImage}.png`}
+              width={500}
+              height={500}
+              alt={props.caseAlt}
+            />
+          </a>
           <div className=" max-w-md">
             <div className=" mt-6 flex sm:max-lg:flex-col  justify-between items-center">
               <h3 className=" sm:max-lg:self-baseline m-0">{props.caseName}</h3>
 
               <a
                 className=" text-col-accent underline sm:max-lg:self-baseline"
-                href="#"
+                href={props.caseLink}
               >
                 Besøg side
               </a>
