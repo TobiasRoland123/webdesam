@@ -6,7 +6,12 @@
 //   "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
 // ],
 module.exports = {
-  purge: ["./src/components/**/*.{js,jsx}", "./public/index.html"],
+  purge: [
+    "./src/components/**/*.{js,jsx}",
+    "./public/index.html",
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
 
   theme: {
     fontFamily: {
