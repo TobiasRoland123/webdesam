@@ -373,11 +373,11 @@ export default function Home() {
           </div>
 
           <Image
-            className=" aspect-square object-cover mx-auto"
+            className=" aspect-square object-cover mx-auto rounded-2xl"
             src={tobias_roland}
             width={500}
             height={500}
-            alt="A mock of a case that has been made by wedesam"
+            alt="Billede af Tobias Roland"
           />
         </article>
       </section>

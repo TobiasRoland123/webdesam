@@ -7,7 +7,10 @@ export function Case(props) {
     <>
       <article className=" mt-12 p-4 sm:mt-4">
         <div>
-          <a href={props.caseLink}>
+          <a
+            href={props.caseLink}
+            target="_blank"
+          >
             <Image
               className=" mx-auto  "
               src={props.caseImage}
@@ -23,6 +26,7 @@ export function Case(props) {
               <a
                 className=" text-col-accent underline sm:max-lg:self-baseline"
                 href={props.caseLink}
+                target="_blank"
               >
                 Besøg side
               </a>
