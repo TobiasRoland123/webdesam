@@ -226,7 +226,7 @@ export default function Home() {
                 className=" text-base text-col-accent"
                 for="name"
               >
-                Full name
+                Fulde navn
               </label>
               <input
                 className=" [&:not(focus)]:( invalid:text-red-600)     mt-1 p-2  text-col-primary h-11 rounded-md border-none"
@@ -261,7 +261,7 @@ export default function Home() {
                 className=" text-base text-col-accent"
                 for="tel"
               >
-                Phone Number
+                Telefon nummer
               </label>
               <input
                 className=" [&:not(focus)]:( invalid:text-red-600)     mt-1 p-2  text-col-primary h-11 rounded-md border-none"
@@ -278,7 +278,7 @@ export default function Home() {
                 className=" text-base text-col-accent"
                 for="message"
               >
-                Short message
+                Din besked
               </label>
               <textarea
                 className=" [&:not(focus)]:( invalid:text-red-600)     mt-1 p-2  text-col-primary  rounded-md border-none "
@@ -294,7 +294,7 @@ export default function Home() {
                 className=" text-base text-col-accent"
                 for="time"
               >
-                When is the best time for me to reach you?
+                Hvornår passer et opkald dig?
               </label>
               <select
                 className=" [&:not(focus)]:( invalid:text-red-600)     mt-1 p-2  text-col-primary  rounded-md border-none "
@@ -302,10 +302,10 @@ export default function Home() {
                 name="time"
                 required
               >
-                <option value={""}>---please select time frame---</option>
-                <option value={"09-12"}>Between 09-12</option>
-                <option value={"12-15"}>Between 12-15</option>
-                <option value={"15-18"}>Between 15-18</option>
+                <option value={""}>---Vælg venligts tidsrum---</option>
+                <option value={"09-12"}>Mellem 09-12</option>
+                <option value={"12-15"}>Mellem 12-15</option>
+                <option value={"15-18"}>Mellem 15-18</option>
               </select>
             </div>
             <div className="flex justify-end">
