@@ -33,9 +33,9 @@ module.exports = {
     extend: {
       colors: {
         col: {
-          primary: "#5C7773",
+          primary: "#526B67",
           secondary: "#F9FBF9",
-          accent: "#8AC1C6",
+          accent: "#AFF4FA",
           // Add more custom colors as needed
         },
       },

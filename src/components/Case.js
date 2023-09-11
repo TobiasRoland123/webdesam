@@ -10,6 +10,7 @@ export function Case(props) {
           <a
             href={props.caseLink}
             target="_blank"
+            aria-label={props.caseLinkLabel}
           >
             <Image
               className=" mx-auto  "
@@ -27,6 +28,7 @@ export function Case(props) {
                 className=" text-col-accent underline sm:max-lg:self-baseline"
                 href={props.caseLink}
                 target="_blank"
+                aria-label={props.caseLinkLabel}
               >
                 Besøg side
               </a>

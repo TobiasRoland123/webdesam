@@ -9,20 +9,26 @@ import { tobias_roland } from "../../public/images/portraits";
 const cases = [
   {
     caseName: "Kleines",
+
     caseImage: kleines_mockup,
+    caseLinkLabel: `Læs mere eller besøg siden`,
     caseLink: "https://madvigux.dk/kleines/",
     caseParagraph:
       "Kleines er en guldsmed, som ligger inde på Nørrebro, og beskæftiger sig primært med unikasmykker. Vi har lavet en faceliftet udgave af hendes nuværende hjemmeside, som gør at virksomhedens karakter rigtigt skinner igennem på hjemmesiden.  ",
   },
   {
     caseName: "Foofest",
+
     caseImage: foofest_mockup,
+    caseLinkLabel: `Læs mere eller besøg siden`,
     caseLink: "https://festival-otaqqwj9v-thefred94.vercel.app",
     caseParagraph:
       "Foofest er et projekt, jeg i forbindelse med en eksamen har udviklet sammen med min gruppe. Vi er selv kommet op med konceptet, som er en nordisk festival der indrager det store flotte nordlys. Siden er 2 delt da vi både har udviklet en side hvor det er muligt at se hvem der spiller på de forskellige scener, samt et flow hvor det er muligt at bestille sine biletter.",
   },
   {
     caseName: "NBU",
+
+    caseLinkLabel: `Læs mere eller besøg siden`,
     caseImage: nbu_mockup,
     caseLink: "https://madvigux.dk/kleines/",
     caseParagraph:
@@ -147,10 +153,10 @@ export default function Home() {
      justify-center hidden sm:flex "
           >
             <a
-              className=" items-center flex justify-center align-middle mt-8 border-none w-44 h-14 border rounded-md bg-col-accent "
+              className=" items-center flex justify-center align-middle mt-8 border-none w-44 h-14 border rounded-md bg-col-accent text-col-primary text-xl font-bold "
               href="#contact"
             >
-              <h3 className=" text-xl  m-0">Kontakt mig</h3>
+              Kontakt mig
             </a>
           </div>
         </article>
@@ -313,7 +319,7 @@ export default function Home() {
                 className=" mt-8 border-none w-44 h-14 border rounded-md bg-col-accent"
                 type="submit"
               >
-                <h3 className=" text-xl m-0">Send</h3>
+                <h3 className=" text-xl m-0 text-col-primary">Send</h3>
               </button>
             </div>
           </form>
@@ -341,6 +347,7 @@ export default function Home() {
               caseName={caseDetails.caseName}
               caseLink={caseDetails.caseLink}
               caseParagraph={caseDetails.caseParagraph}
+              caseLinkLabel={caseDetails.caseLinkLabel}
             />
           ))}
         </div>

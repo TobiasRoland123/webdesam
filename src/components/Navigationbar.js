@@ -27,6 +27,7 @@ export default function Navigationbar() {
             console.log("nav button test");
           }}
           className=" z-10"
+          aria-labelledby="Menu button"
         >
           <span className="w-10  h-1 block rounded-3xl mt-2 bg-col-accent transition-all"></span>
           <span className="w-7 h-1 block rounded-3xl mt-2 bg-col-accent transition-all ml-auto"></span>
