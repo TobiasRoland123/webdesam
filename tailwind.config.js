@@ -2,16 +2,16 @@
 
 module.exports = {
   purge: [
-    "./src/components/**/*.{js,jsx}",
-    "./public/index.html",
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    './src/components/**/*.{js,jsx}',
+    './public/index.html',
+    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
 
   theme: {
     fontFamily: {
-      ubuntu: ["ubuntu", "sans-serif"],
-      "Source Sans 3": ["Source Sans 3", "sans-serif"], // Ensure fonts with spaces have " " surrounding it.
+      ubuntu: ['ubuntu', 'sans-serif'],
+      'Source Sans 3': ['Source Sans 3', 'sans-serif'], // Ensure fonts with spaces have " " surrounding it.
     },
 
     // screens: {
@@ -33,9 +33,9 @@ module.exports = {
     extend: {
       colors: {
         col: {
-          primary: "#526B67",
-          secondary: "#F9FBF9",
-          accent: "#AFF4FA",
+          primary: '#C6C7CB',
+          secondary: '#101C30',
+          accent: '#2D4373',
           // Add more custom colors as needed
         },
       },
