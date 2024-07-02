@@ -1,7 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 
 module.exports = {
-  purge: ['./src/*', './public/index.html', './src/pages/**/*.{js,ts,jsx,tsx,mdx}', './src/app/**/*.{js,ts,jsx,tsx,mdx}'],
+  purge: [
+    './src/components/**/*.{js,jsx}',
+    './src/modules/**/*.{js,jsx}',
+    './public/index.html',
+    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+  ],
 
   theme: {
     fontFamily: {
