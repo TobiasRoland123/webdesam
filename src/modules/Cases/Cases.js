@@ -1,16 +1,16 @@
 const { Case } = require('@/components/Case');
-import { kleines_mockup, foofest_mockup, nbu_mockup } from '../../../public/images/mockups';
+import { nextLvl_mockup, foofest_mockup, nbu_mockup } from '../../../public/images/mockups';
 
 const Cases = () => {
   const cases = [
     {
-      caseName: 'Kleines',
+      caseName: 'Next Level Gaming',
 
-      caseImage: kleines_mockup,
+      caseImage: nextLvl_mockup,
       caseLinkLabel: `Læs mere eller besøg siden`,
-      caseLink: 'https://madvigux.dk/kleines/',
+      caseLink: 'https://next-level-gamma.vercel.app/',
       caseParagraph:
-        'Kleines er en guldsmed, som ligger inde på Nørrebro, og beskæftiger sig primært med unikasmykker. Vi har lavet en faceliftet udgave af hendes nuværende hjemmeside, som gør at virksomhedens karakter rigtigt skinner igennem på hjemmesiden.  ',
+        'Next Level Gaming er et topmoderne gamingcenter i Danmark, der tilbyder gamingoplevelser i høj kvalitet. Centret fokuserer på fællesskab og sociale arrangementer, herunder børnefødselsdage og firmaevents. De tilbyder en bred vifte af spil, snacks og drikkevarer, og har fleksible åbningstider. Besøgende kan deltage i turneringer og events designet til grupper i alle størrelser.',
     },
     {
       caseName: 'Foofest',

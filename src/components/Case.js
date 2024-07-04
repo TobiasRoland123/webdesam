@@ -1,33 +1,33 @@
-import Button from "@/components/Button";
-import Image from "next/image";
-import { foofest_mockup, kleines_mockup, nbu_mockup } from "../../public/images/mockups";
+import Button from '@/components/Button';
+import Image from 'next/image';
+import { foofest_mockup, kleines_mockup, nbu_mockup } from '../../public/images/mockups';
 
 export function Case(props) {
   return (
     <>
-      <article className=" mt-12 p-4 sm:mt-4">
+      <article className=' mt-12 p-4 sm:mt-4'>
         <div>
           <a
             href={props.caseLink}
-            target="_blank"
+            target='_blank'
             aria-label={props.caseLinkLabel}
           >
             <Image
-              className=" mx-auto  "
+              className='mx-auto aspect-[5/4] object-contain'
               src={props.caseImage}
               width={500}
               height={500}
               alt={props.caseAlt}
             />
           </a>
-          <div className=" max-w-md">
-            <div className=" mt-6 flex sm:max-lg:flex-col  justify-between items-center">
-              <h3 className=" sm:max-lg:self-baseline m-0">{props.caseName}</h3>
+          <div className=' max-w-md'>
+            <div className=' mt-6 flex sm:max-lg:flex-col  justify-between items-center'>
+              <h3 className=' sm:max-lg:self-baseline m-0'>{props.caseName}</h3>
 
               <a
-                className=" text-col-accent underline sm:max-lg:self-baseline"
+                className=' text-col-accent sm:max-lg:self-baseline'
                 href={props.caseLink}
-                target="_blank"
+                target='_blank'
                 aria-label={props.caseLinkLabel}
               >
                 Besøg side
@@ -38,7 +38,7 @@ export function Case(props) {
               text={`Visit page`}
             ></Button> */}
             </div>
-            <p className=" mt-6">{props.caseParagraph}</p>
+            <p className=' mt-6'>{props.caseParagraph}</p>
           </div>
         </div>
       </article>
